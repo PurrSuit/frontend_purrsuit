@@ -1,3 +1,5 @@
+"use strict";
+
 const HOST = "http://localhost:3000";
 
 angular.module('starter.services', ['ngResource'])
