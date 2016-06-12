@@ -6,8 +6,7 @@ function($scope, $rootScope, $state, $ionicPopup, SignUp, LogInFactory, EditUser
   DeleteUser, FollowedDeputies, FollowDeputy, UnfollowDeputy) {
   //Sign up
   $scope.signUp = function(user){
-    console.log(user);
-    SignUp.save({user:user}, function(user) {
+    SignUp.save(user, function(user){
       $ionicPopup.alert({
         title: 'Sucesso',
         template: 'Conta criada com êxito!'

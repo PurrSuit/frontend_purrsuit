@@ -15,13 +15,13 @@
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^0.5.3",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^1.2.3",
     "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.7",
-    "karma-coverage": "^0.5.3",
-    "karma-mocha-reporter":"^1.2.3",
-    "mocha":"^2.4.5",
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
@@ -34,5 +34,22 @@
   ],
   "cordovaPlatforms": [
     "android"
-  ]
+  ],
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start tests/karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurrSuit/frontend_purrsuit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PurrSuit/frontend_purrsuit/issues"
+  },
+  "homepage": "https://github.com/PurrSuit/frontend_purrsuit#readme"
 }
